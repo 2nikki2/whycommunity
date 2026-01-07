@@ -1,0 +1,460 @@
+/* Google Fonts - Oswald Heavy (700) for headlines, Light (300) for body */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap');
+
+/* Vincore Color Palette */
+:root {
+    --vincore-dark: #0a0d10;
+    --vincore-darker: #00010d;
+    --vincore-light: #eef0f4;
+    --vincore-cyan: #07b0e3;
+    --vincore-purple: #eabaff;
+    --vincore-blue: #0099ff;
+    --vincore-text-dark: #161b21;
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: 300 !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    color: #eef0f4 !important;
+    background: #00010d !important;
+    background-color: #00010d !important;
+    padding: 20px !important;
+    min-height: 100vh !important;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.75em;
+    color: #eef0f4;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 1.3;
+    margin-top: 1.5em;
+    margin-bottom: 0.75em;
+    color: #eef0f4;
+}
+
+h2:not(header h2) {
+    border-bottom: 2px solid #07b0e3;
+    padding-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-top: 1.25em;
+    margin-bottom: 0.5em;
+    color: #eef0f4;
+}
+
+p {
+    margin-bottom: 1em;
+    font-weight: 300;
+    color: #eef0f4;
+}
+
+strong {
+    font-weight: 700;
+    color: #eef0f4;
+}
+
+/* Header */
+header {
+    text-align: center !important;
+    margin-bottom: 30px !important;
+    padding: 30px 20px !important;
+    border-bottom: 3px solid #07b0e3 !important;
+    background: linear-gradient(to bottom, #0a0d10, #00010d) !important;
+    background-color: #0a0d10 !important;
+    border-radius: 8px !important;
+}
+
+header h1 {
+    color: #eef0f4;
+}
+
+.tagline {
+    font-size: 18px;
+    font-weight: 300;
+    color: #eef0f4;
+    margin-top: 0.5em;
+    opacity: 0.9;
+}
+
+/* Two-Column Layout */
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.column {
+    min-width: 0 !important;
+    background: rgba(10, 13, 16, 0.4) !important;
+    background-color: rgba(10, 13, 16, 0.4) !important;
+    padding: 20px !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(7, 176, 227, 0.3) !important;
+}
+
+.left-column {
+    padding-right: 20px;
+}
+
+.right-column {
+    padding-left: 20px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 2em;
+    page-break-inside: avoid;
+}
+
+.transform-section {
+    margin-bottom: 2em;
+}
+
+.transform-section h2 {
+    font-size: 32px;
+    margin-top: 0;
+    color: #eef0f4;
+}
+
+/* Lists */
+ul {
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+li {
+    margin-bottom: 0.5em;
+    font-weight: 300;
+    color: #eef0f4;
+}
+
+/* Testimonials */
+.testimonials-section {
+    margin-top: 2em;
+}
+
+.testimonial {
+    margin-bottom: 1.5em;
+    padding-left: 1em;
+    border-left: 3px solid #07b0e3;
+}
+
+.testimonial h3 {
+    font-size: 18px;
+    margin-bottom: 0.5em;
+    color: #eef0f4;
+}
+
+blockquote {
+    font-style: italic;
+    margin-left: 0;
+    padding-left: 0;
+    font-weight: 300;
+    color: #eef0f4;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5em;
+    page-break-inside: avoid;
+    font-size: 12px;
+}
+
+thead {
+    background-color: #0a0d10;
+    color: #eef0f4;
+}
+
+th {
+    font-weight: 700;
+    padding: 10px 8px;
+    text-align: left;
+    border: 1px solid #0a0d10;
+    color: #eef0f4;
+}
+
+td {
+    padding: 8px;
+    border: 1px solid rgba(238, 240, 244, 0.2);
+    font-weight: 300;
+    color: #eef0f4;
+    background-color: rgba(10, 13, 16, 0.6);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(7, 176, 227, 0.15);
+}
+
+tbody tr:nth-child(even) td {
+    background-color: rgba(7, 176, 227, 0.15);
+}
+
+.price-row {
+    background-color: rgba(7, 176, 227, 0.2);
+    font-weight: 700;
+}
+
+.price-row td {
+    background-color: rgba(7, 176, 227, 0.2);
+}
+
+.pricing-table {
+    font-size: 11px;
+}
+
+.pricing-table th,
+.pricing-table td {
+    padding: 6px 4px;
+    vertical-align: top;
+}
+
+.hosting-table {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.hosting-table th,
+.hosting-table td {
+    padding: 8px;
+}
+
+/* Services */
+.service {
+    margin-bottom: 2em;
+    page-break-inside: avoid;
+}
+
+.service h3 {
+    color: #eef0f4;
+}
+
+.service-price {
+    font-size: 16px;
+    margin-bottom: 0.75em;
+    color: #07b0e3;
+}
+
+.service-price strong {
+    color: #07b0e3;
+}
+
+.service-note {
+    font-size: 11px;
+    margin-top: 0.5em;
+    font-style: italic;
+    color: rgba(238, 240, 244, 0.7);
+}
+
+.hosting-includes {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    color: #eef0f4;
+}
+
+.hosting-includes strong {
+    color: #eef0f4;
+}
+
+/* Contact Section */
+.contact-section {
+    margin-top: 2em;
+}
+
+.contact-section h2 {
+    color: #eef0f4;
+}
+
+.contact-section p {
+    color: #eef0f4;
+}
+
+.contact-section p strong {
+    color: #eef0f4;
+}
+
+.contact-list {
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 1em;
+}
+
+.contact-list li {
+    margin-bottom: 0.75em;
+    color: #eef0f4;
+}
+
+.contact-list li strong {
+    color: #eef0f4;
+}
+
+.pricing-note {
+    font-size: 10px;
+    margin-top: 1em;
+    font-style: italic;
+    color: rgba(238, 240, 244, 0.7);
+}
+
+/* Footer */
+footer {
+    margin-top: 40px !important;
+    padding: 20px !important;
+    background: #00010d !important;
+    background-color: #00010d !important;
+    border-top: 2px solid #07b0e3 !important;
+    text-align: center !important;
+    font-size: 12px !important;
+    page-break-inside: avoid !important;
+    border-radius: 8px !important;
+}
+
+footer p {
+    margin-bottom: 0.5em;
+    font-weight: 300;
+    color: #eef0f4;
+}
+
+footer a {
+    color: #07b0e3;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #eabaff;
+}
+
+/* Print Styles */
+@media print {
+    @page {
+        size: letter;
+        margin: 0.75in;
+    }
+
+    body {
+        padding: 0;
+        font-size: 11px;
+        background: #00010d;
+        color: #eef0f4;
+    }
+
+    h1 {
+        font-size: 36px;
+        color: #eef0f4;
+    }
+
+    h2 {
+        font-size: 24px;
+        color: #eef0f4;
+        border-bottom-color: #07b0e3;
+    }
+
+    h3 {
+        font-size: 16px;
+        color: #eef0f4;
+    }
+    
+    header {
+        background: #0a0d10;
+        border-bottom-color: #07b0e3;
+    }
+
+    .two-column {
+        gap: 30px;
+    }
+
+    section {
+        page-break-inside: avoid;
+        margin-bottom: 1.5em;
+    }
+
+    table {
+        page-break-inside: avoid;
+        font-size: 9px;
+    }
+
+    .pricing-table {
+        font-size: 8px;
+    }
+
+    .pricing-table th,
+    .pricing-table td {
+        padding: 4px 3px;
+        color: #eef0f4;
+    }
+    
+    td {
+        background-color: rgba(10, 13, 16, 0.5);
+        color: #eef0f4;
+    }
+
+    .hosting-table th,
+    .hosting-table td {
+        padding: 6px;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        margin-top: 20px;
+        padding: 15px;
+        background: #00010d;
+        border-top: 2px solid #07b0e3;
+    }
+    
+    footer p {
+        color: #eef0f4;
+    }
+    
+    footer a {
+        color: #07b0e3;
+    }
+
+    /* Prevent page breaks in critical sections */
+    .pricing-section,
+    .services-section,
+    .roi-section {
+        page-break-inside: avoid;
+    }
+
+    /* Ensure tables don't break awkwardly */
+    thead {
+        display: table-header-group;
+    }
+
+    tbody {
+        display: table-row-group;
+    }
+
+    tr {
+        page-break-inside: avoid;
+    }
+}
