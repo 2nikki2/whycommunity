@@ -34,7 +34,7 @@
             --text-muted: rgba(241, 245, 249, 0.5);
             
             /* Spacing */
-            --slide-padding: clamp(2rem, 5vw, 6rem);
+            --slide-padding: clamp(1.5rem, 4vw, 4rem);
             
             /* Timing */
             --transition-fast: 0.2s;
@@ -191,19 +191,19 @@
            ═══════════════════════════════════════════════════════════════ */
 
         .headline-xl {
-            font-size: clamp(3rem, 10vw, 7rem);
+            font-size: clamp(2.5rem, 8vw, 5rem);
             font-weight: 700;
             line-height: 1;
             letter-spacing: -0.03em;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
 
         .headline-lg {
-            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-size: clamp(1.8rem, 5vw, 3rem);
             font-weight: 700;
             line-height: 1.1;
             letter-spacing: -0.02em;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
 
         .headline-md {
@@ -215,11 +215,11 @@
         }
 
         .subhead {
-            font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+            font-size: clamp(1rem, 2vw, 1.25rem);
             font-weight: 400;
-            line-height: 1.6;
+            line-height: 1.5;
             color: var(--text-secondary);
-            max-width: 700px;
+            max-width: 650px;
             margin: 0 auto;
         }
 
@@ -321,17 +321,17 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 1.5rem;
-            margin-top: 3rem;
+            gap: 1rem;
+            margin-top: 1.5rem;
             text-align: left;
             width: 100%;
-            max-width: 1100px;
+            max-width: 900px;
         }
 
         .feature-grid .feature-card {
             flex: 0 1 calc(50% - 0.75rem);
-            min-width: 280px;
-            max-width: 400px;
+            min-width: 240px;
+            max-width: 360px;
         }
 
         @media (max-width: 700px) {
@@ -342,39 +342,40 @@
         }
 
         .feature-card {
-            padding: 1.75rem;
+            padding: 1.25rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+        }
+
+        .feature-card p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
         }
 
         .feature-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: 12px;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
             background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(168, 85, 247, 0.2));
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 1rem;
+            margin-bottom: 0.75rem;
         }
 
         .feature-icon svg {
-            width: 24px;
-            height: 24px;
+            width: 20px;
+            height: 20px;
             stroke: var(--cyan);
             stroke-width: 1.5;
             fill: none;
         }
 
-        .feature-card h3 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .feature-card p {
-            font-size: 0.95rem;
-            color: var(--text-secondary);
-            line-height: 1.6;
-        }
 
         /* ═══════════════════════════════════════════════════════════════
            STATS & METRICS
@@ -415,21 +416,21 @@
         .pricing-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-            margin-top: 2rem;
-            max-width: 1000px;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            max-width: 850px;
             width: 100%;
         }
 
         @media (max-width: 900px) {
             .pricing-grid {
                 grid-template-columns: 1fr;
-                max-width: 400px;
+                max-width: 320px;
             }
         }
 
         .pricing-card {
-            padding: 2rem;
+            padding: 1.25rem;
             text-align: left;
             position: relative;
             overflow: hidden;
@@ -465,7 +466,7 @@
         }
 
         .pricing-amount {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 700;
             margin-bottom: 0.25rem;
         }
@@ -482,13 +483,13 @@
         }
 
         .pricing-features li {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             color: var(--text-secondary);
-            padding: 0.5rem 0;
+            padding: 0.4rem 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
             display: flex;
             align-items: center;
-            gap: 0.75rem;
+            gap: 0.5rem;
         }
 
         .pricing-features li::before {
@@ -769,6 +770,77 @@
             max-width: 900px;
         }
 
+        /* Comparison table */
+        .comparison-container {
+            width: 100%;
+            max-width: 900px;
+            margin-top: 2rem;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .comparison-table th {
+            font-weight: 600;
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .comparison-table th:first-child {
+            width: 40%;
+        }
+
+        .comparison-table th:nth-child(2) {
+            color: var(--text-muted);
+        }
+
+        .comparison-table th:nth-child(3) {
+            color: var(--cyan);
+        }
+
+        .comparison-table td {
+            color: var(--text-secondary);
+        }
+
+        .comparison-table td:nth-child(3) {
+            color: var(--text-primary);
+        }
+
+        .comparison-table .check {
+            color: var(--emerald);
+        }
+
+        .comparison-table .x {
+            color: var(--text-muted);
+            opacity: 0.5;
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        @media (max-width: 600px) {
+            .comparison-table {
+                font-size: 0.8rem;
+            }
+            .comparison-table th,
+            .comparison-table td {
+                padding: 0.5rem;
+            }
+        }
+
         .capability-tag {
             padding: 0.75rem 1.5rem;
             background: rgba(0, 212, 255, 0.1);
@@ -810,6 +882,12 @@
 
         .security-badge-icon {
             font-size: 2rem;
+        }
+
+        .security-badge-icon svg {
+            width: 32px;
+            height: 32px;
+            stroke: var(--emerald);
         }
 
         .security-badge-text {
@@ -925,7 +1003,7 @@
     <!-- Slide counter -->
     <div class="slide-counter">
         <span class="current" id="currentSlide">01</span> / <span id="totalSlides">10</span>
-    </div>
+                </div>
 
     <!-- Main deck -->
     <div class="deck" id="deck">
@@ -949,8 +1027,8 @@
                         </svg>
                     </button>
                 </div>
-            </div>
-        </section>
+                </div>
+            </section>
 
         <!-- SLIDE 2: The Problem -->
         <section class="slide" data-slide="1">
@@ -968,7 +1046,7 @@
                         <div class="feature-icon"><svg viewBox="0 0 24 24"><rect x="3" y="12" width="4" height="9" rx="1"/><rect x="10" y="8" width="4" height="13" rx="1"/><rect x="17" y="4" width="4" height="17" rx="1"/></svg></div>
                         <h3>Dashboards Everywhere</h3>
                         <p>Pretty charts don't tell you why engagement dropped or what to do about it.</p>
-                    </div>
+        </div>
                     <div class="glass-card feature-card">
                         <div class="feature-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><circle cx="12" cy="17" r="0.5" fill="currentColor"/></svg></div>
                         <h3>No "So What?"</h3>
@@ -983,8 +1061,64 @@
             </div>
         </section>
 
-        <!-- SLIDE 3: The Solution -->
+        <!-- SLIDE 3: The Difference (Comparison) -->
         <section class="slide" data-slide="2">
+            <div class="slide-content">
+                <p class="label reveal">The Difference</p>
+                <h2 class="headline-lg reveal">
+                    Why We're<br><span class="gradient-text">Not Like the Rest</span>
+                </h2>
+                <p class="subhead reveal">
+                    Most Discord analytics tools are passive dashboards. We're an intelligence platform.
+                </p>
+                <div class="comparison-container reveal">
+                    <table class="comparison-table">
+                    <thead>
+                        <tr>
+                                <th>Capability</th>
+                                <th>Basic Analytics</th>
+                                <th>Vincore Echo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td>Shows charts & graphs</td>
+                                <td class="check">✓</td>
+                                <td class="check">✓ Plus context</td>
+                        </tr>
+                        <tr>
+                                <td>Explains why metrics changed</td>
+                                <td class="x">✗</td>
+                                <td class="check">✓ AI-generated insights</td>
+                        </tr>
+                        <tr>
+                                <td>Tells you what to do next</td>
+                                <td class="x">✗</td>
+                                <td class="check">✓ Actionable recommendations</td>
+                        </tr>
+                        <tr>
+                                <td>Predicts problems before they happen</td>
+                                <td class="x">✗</td>
+                                <td class="check">✓ Predictive alerts</td>
+                        </tr>
+                        <tr>
+                                <td>Tracks full member journey</td>
+                                <td class="x">✗</td>
+                                <td class="check">✓ Onboarding to churn</td>
+                        </tr>
+                        <tr>
+                                <td>Enterprise security & audit trails</td>
+                                <td class="x">✗</td>
+                                <td class="check">✓ OAuth, RBAC, full logging</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+            </section>
+
+        <!-- SLIDE 4: The Solution -->
+        <section class="slide" data-slide="3">
             <div class="hero-orb" style="top: 30%; left: 30%;"></div>
             <div class="slide-content">
                 <p class="label reveal">The Solution</p>
@@ -992,7 +1126,7 @@
                     Meet <span class="gradient-text">Vincore Echo</span>
                 </h2>
                 <p class="subhead reveal">
-                    We blend deep insights with clear action. Not just charts — actual recommendations for growing, monitoring, predicting, and managing your community. Every insight comes with a next step.
+                    Intelligence meets action. Every insight comes with a clear next step — so you spend less time analyzing and more time growing your community.
                 </p>
                 <div class="capability-list reveal">
                     <span class="capability-tag">Real-Time Analytics</span>
@@ -1007,73 +1141,73 @@
             </div>
             </section>
 
-        <!-- SLIDE 4: AI Intelligence -->
-        <section class="slide" data-slide="3">
+        <!-- SLIDE 5: AI Intelligence -->
+        <section class="slide" data-slide="4">
             <div class="slide-content">
                 <p class="label reveal">AI-Powered Intelligence</p>
                 <h2 class="headline-lg reveal">
-                    Your Community,<br><span class="gradient-text">Understood</span>
+                    Know How They Feel<br><span class="gradient-text">Before It's Too Late</span>
                 </h2>
                 <div class="feature-grid">
                     <div class="glass-card feature-card reveal">
                         <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"/><path d="M9 21h6"/><path d="M10 17v4"/><path d="M14 17v4"/></svg></div>
-                        <h3>Sentiment Analysis</h3>
-                        <p>Understand the emotional pulse of your community in real-time. Detect shifts before they become problems.</p>
+                        <h3>Catch Mood Shifts Early</h3>
+                        <p>Real-time sentiment analysis detects frustration the moment it starts — so you can act before meltdowns happen.</p>
                 </div>
                     <div class="glass-card feature-card reveal">
                         <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg></div>
-                        <h3>Executive Summaries</h3>
-                        <p>Daily and weekly AI-generated reports that tell you exactly what happened and what to do next.</p>
+                        <h3>Brief Leadership in Seconds</h3>
+                        <p>AI-generated daily summaries. Stop building reports manually — share what matters in 30 seconds, not 30 minutes.</p>
                     </div>
                     <div class="glass-card feature-card reveal">
                         <div class="feature-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
-                        <h3>Smart Recommendations</h3>
-                        <p>Personalized action items based on your community's unique patterns and goals.</p>
+                        <h3>Know Exactly What to Do</h3>
+                        <p>Personalized recommendations based on your community's patterns. No more guessing what to try next.</p>
                     </div>
                     <div class="glass-card feature-card reveal">
                         <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
-                        <h3>Predictive Alerts</h3>
-                        <p>Get notified before issues escalate. Our AI spots trouble brewing hours in advance.</p>
+                        <h3>Stop Fires Before They Start</h3>
+                        <p>Predictive alerts notify you hours before issues escalate. Fix problems when they're small.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SLIDE 5: Analytics Power -->
-        <section class="slide" data-slide="4">
+        <!-- SLIDE 6: Analytics Power -->
+        <section class="slide" data-slide="5">
             <div class="tech-grid"></div>
             <div class="slide-content">
                 <p class="label reveal">Insight + Action</p>
                 <h2 class="headline-lg reveal">
-                    Every Metric Comes<br><span class="gradient-text">With a Next Step</span>
+                    One Number That Tells You<br><span class="gradient-text">If Things Are Okay</span>
                 </h2>
                 <div class="feature-grid">
                     <div class="glass-card feature-card reveal">
                         <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7 7-7z"/></svg></div>
-                        <h3>Community Health Score</h3>
-                        <p>One metric that captures vitality — plus specific recommendations when scores trend down.</p>
+                        <h3>Instant Community Pulse</h3>
+                        <p>Health Score tells you at a glance if things are good or going sideways — plus what to fix.</p>
                 </div>
                     <div class="glass-card feature-card reveal">
                         <div class="feature-icon"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M6 21V9a9 9 0 0 0 9 9"/></svg></div>
-                        <h3>Member Journey Tracking</h3>
-                        <p>See how members progress — and get alerts with intervention suggestions before they churn.</p>
+                        <h3>See Where Members Drop Off</h3>
+                        <p>Track the full journey from join to active. Get alerts with re-engagement suggestions before they churn.</p>
                     </div>
                     <div class="glass-card feature-card reveal">
                         <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>
-                        <h3>Cross-Channel Analysis</h3>
-                        <p>Find where engagement flows — with suggestions on where to double down or restructure.</p>
+                        <h3>Find Your Best Channels</h3>
+                        <p>Know where engagement flows. Get suggestions on where to double down or restructure.</p>
                     </div>
                     <div class="glass-card feature-card reveal">
                         <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M23 6l-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/></svg></div>
-                        <h3>Trending Topics</h3>
-                        <p>Know what's being discussed — with recommended talking points and content ideas to capitalize.</p>
+                        <h3>Capitalize on What's Hot</h3>
+                        <p>See trending topics with content ideas and talking points to ride the wave.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SLIDE 6: Moderation -->
-        <section class="slide" data-slide="5">
+        <!-- SLIDE 7: Moderation -->
+        <section class="slide" data-slide="6">
             <div class="slide-content">
                 <p class="label reveal">Advanced Moderation</p>
                 <h2 class="headline-lg reveal">
@@ -1082,23 +1216,23 @@
                 <div class="feature-grid">
                     <div class="glass-card feature-card reveal">
                         <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 12l2 2 4-4"/></svg></div>
-                        <h3>Smart Action Queue</h3>
-                        <p>AI-prioritized moderation tasks. Handle what matters most, first.</p>
+                        <h3>Handle What Matters First</h3>
+                        <p>AI prioritizes your mod queue by severity. Urgent issues surface instantly, noise fades.</p>
                     </div>
                     <div class="glass-card feature-card reveal">
                         <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15l3 3 3-3"/></svg></div>
-                        <h3>Complete Audit Trail</h3>
-                        <p>Every action logged with timestamps. Full accountability for your mod team.</p>
+                        <h3>Full Accountability</h3>
+                        <p>Every mod action logged with timestamps. Know who did what, when — no more finger-pointing.</p>
                     </div>
                     <div class="glass-card feature-card reveal">
                         <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4"/><circle cx="12" cy="17" r="0.5" fill="currentColor"/></svg></div>
-                        <h3>Flagged User Detection</h3>
-                        <p>Automatic identification of suspicious accounts and bad actors.</p>
+                        <h3>Spot Bad Actors Fast</h3>
+                        <p>AI flags suspicious accounts and repeat offenders automatically. Catch raiders before damage spreads.</p>
                     </div>
                     <div class="glass-card feature-card reveal">
                         <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></div>
-                        <h3>Recurring Tasks</h3>
-                        <p>Automate routine checks. Your moderation runs even when you're not watching.</p>
+                        <h3>Moderation on Autopilot</h3>
+                        <p>Automate routine checks. Your server stays clean even when you're sleeping.</p>
                     </div>
                 </div>
                 </div>
@@ -1142,23 +1276,23 @@
                 </p>
                 <div class="security-badges reveal">
                     <div class="security-badge">
-                        <div class="security-badge-icon">🔐</div>
+                        <div class="security-badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="16" r="1"/></svg></div>
                         <div class="security-badge-text">AES-256-GCM<br>Encryption</div>
         </div>
                     <div class="security-badge">
-                        <div class="security-badge-icon">🛡️</div>
+                        <div class="security-badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
                         <div class="security-badge-text">OAuth 2.0<br>Authentication</div>
                     </div>
                     <div class="security-badge">
-                        <div class="security-badge-icon">👁️</div>
+                        <div class="security-badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg></div>
                         <div class="security-badge-text">Role-Based<br>Access Control</div>
                     </div>
                     <div class="security-badge">
-                        <div class="security-badge-icon">📊</div>
+                        <div class="security-badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/></svg></div>
                         <div class="security-badge-text">Full<br>Audit Trail</div>
                     </div>
                     <div class="security-badge">
-                        <div class="security-badge-icon">⚡</div>
+                        <div class="security-badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
                         <div class="security-badge-text">API Rate<br>Limiting</div>
                     </div>
                 </div>
@@ -1197,7 +1331,7 @@
             </section>
 
         <!-- SLIDE 10: Pricing -->
-        <section class="slide" data-slide="9">
+        <section class="slide" data-slide="7">
             <div class="slide-content">
                 <p class="label reveal">Pricing</p>
                 <h2 class="headline-lg reveal">
@@ -1215,7 +1349,7 @@
                             <li>Health Dashboard</li>
                             <li>Basic Analytics</li>
                             <li>Email Support</li>
-                    </ul>
+                </ul>
                 </div>
                     <div class="glass-card pricing-card featured">
                         <div class="pricing-tier">Intermediate</div>
@@ -1248,7 +1382,7 @@
             </section>
 
         <!-- SLIDE 11: CTA -->
-        <section class="slide" data-slide="10">
+        <section class="slide" data-slide="8">
             <div class="hero-orb" style="top: 40%; left: 50%; transform: translateX(-50%);"></div>
             <div class="slide-content">
                 <p class="label reveal">Ready to Transform?</p>
@@ -1261,7 +1395,7 @@
                 <div class="contact-grid reveal">
                     <div class="contact-item">
                         <strong>Email</strong> nicole@vincore.gg
-                    </div>
+        </div>
                     <div class="contact-item">
                         <strong>Web</strong> vincore.gg
                     </div>
