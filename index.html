@@ -147,7 +147,7 @@
             justify-content: center;
             align-items: center;
             padding: var(--slide-padding);
-            padding-bottom: calc(var(--slide-padding) + 100px); /* Extra space for nav */
+            padding-right: calc(var(--slide-padding) + 60px); /* Space for side nav */
             opacity: 0;
             visibility: hidden;
             transform: translateX(100px);
@@ -532,23 +532,25 @@
 
         .nav {
             position: fixed;
-            bottom: 2rem;
-            left: 50%;
-            transform: translateX(-50%);
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
             z-index: 100;
             display: flex;
+            flex-direction: column;
             align-items: center;
             gap: 1rem;
             background: rgba(17, 24, 32, 0.8);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            padding: 0.75rem 1.5rem;
-            border-radius: 50px;
+            padding: 1rem 0.75rem;
+            border-radius: 30px;
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .nav-dots {
             display: flex;
+            flex-direction: column;
             gap: 0.5rem;
         }
 
@@ -954,11 +956,17 @@
             }
             
             .nav {
-                padding: 0.5rem 1rem;
+                right: 1rem;
+                padding: 0.75rem 0.5rem;
             }
             
             .nav-dots {
-                display: none;
+                gap: 0.4rem;
+            }
+            
+            .nav-dot {
+                width: 8px;
+                height: 8px;
             }
             
             .brand-mark {
@@ -972,7 +980,7 @@
 
         .keyboard-hint {
             position: fixed;
-            bottom: 6rem;
+            bottom: 2rem;
             left: 50%;
             transform: translateX(-50%);
             font-size: 0.8rem;
