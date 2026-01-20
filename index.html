@@ -174,6 +174,15 @@
             max-width: 1200px;
             width: 100%;
             text-align: center;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Hidden slides (customers/testimonials - kept for future use) */
+        .slide.hidden-slide {
+            display: none !important;
         }
 
         /* ═══════════════════════════════════════════════════════════════
@@ -313,6 +322,8 @@
             gap: 1.5rem;
             margin-top: 3rem;
             text-align: left;
+            width: 100%;
+            max-width: 1100px;
         }
 
         .feature-card {
@@ -385,6 +396,7 @@
             gap: 1.5rem;
             margin-top: 2rem;
             max-width: 1000px;
+            width: 100%;
         }
 
         @media (max-width: 900px) {
@@ -922,25 +934,28 @@
         <section class="slide" data-slide="1">
             <div class="tech-grid"></div>
             <div class="slide-content">
-                <p class="label reveal">The Challenge</p>
+                <p class="label reveal">The Problem</p>
                 <h2 class="headline-lg reveal">
-                    Discord Communities Are<br><span class="gradient-text">Flying Blind</span>
+                    Analytics Without<br><span class="gradient-text">Action is Noise</span>
                 </h2>
                 <p class="subhead reveal">
-                    You're building something incredible, but without real insights, you're making decisions based on gut feelings instead of data.
+                    Most analytics platforms give you dashboards full of charts — but no story, no context, and no clear next steps. You're left staring at data, wondering what to actually <em>do</em>.
                 </p>
-                <div class="stats-row reveal">
-                    <div class="stat">
-                        <div class="stat-value">80%</div>
-                        <div class="stat-label">of community managers lack analytics</div>
+                <div class="feature-grid reveal" style="margin-top: 2rem;">
+                    <div class="glass-card feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Dashboards Everywhere</h3>
+                        <p>Pretty charts don't tell you why engagement dropped or what to do about it.</p>
                     </div>
-                    <div class="stat">
-                        <div class="stat-value">3x</div>
-                        <div class="stat-label">faster churn without engagement tracking</div>
+                    <div class="glass-card feature-card">
+                        <div class="feature-icon">❓</div>
+                        <h3>No "So What?"</h3>
+                        <p>Traditional analytics answer "what happened" but never "what now?"</p>
                     </div>
-                    <div class="stat">
-                        <div class="stat-value">0</div>
-                        <div class="stat-label">native tools for community health</div>
+                    <div class="glass-card feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h3>Reactive, Not Proactive</h3>
+                        <p>By the time you notice a problem in the data, it's already too late to fix it.</p>
                     </div>
                 </div>
             </div>
@@ -955,7 +970,7 @@
                     Meet <span class="gradient-text">Vincore Echo</span>
                 </h2>
                 <p class="subhead reveal">
-                    The command center for Discord communities. Real-time analytics, AI-powered insights, and enterprise-grade moderation — all in one platform.
+                    We blend deep insights with clear action. Not just charts — actual recommendations for growing, monitoring, predicting, and managing your community. Every insight comes with a next step.
                 </p>
                 <div class="capability-list reveal">
                     <span class="capability-tag">Real-Time Analytics</span>
@@ -968,7 +983,7 @@
                     <span class="capability-tag">API Access</span>
                 </div>
             </div>
-        </section>
+            </section>
 
         <!-- SLIDE 4: AI Intelligence -->
         <section class="slide" data-slide="3">
@@ -982,7 +997,7 @@
                         <div class="feature-icon">🧠</div>
                         <h3>Sentiment Analysis</h3>
                         <p>Understand the emotional pulse of your community in real-time. Detect shifts before they become problems.</p>
-                    </div>
+                </div>
                     <div class="glass-card feature-card reveal">
                         <div class="feature-icon">📊</div>
                         <h3>Executive Summaries</h3>
@@ -1006,30 +1021,30 @@
         <section class="slide" data-slide="4">
             <div class="tech-grid"></div>
             <div class="slide-content">
-                <p class="label reveal">Real-Time Analytics</p>
+                <p class="label reveal">Insight + Action</p>
                 <h2 class="headline-lg reveal">
-                    Data That<br><span class="gradient-text">Drives Action</span>
+                    Every Metric Comes<br><span class="gradient-text">With a Next Step</span>
                 </h2>
                 <div class="feature-grid">
                     <div class="glass-card feature-card reveal">
                         <div class="feature-icon">💚</div>
                         <h3>Community Health Score</h3>
-                        <p>One metric that captures your community's overall vitality. Track trends and benchmark progress.</p>
-                    </div>
+                        <p>One metric that captures vitality — plus specific recommendations when scores trend down.</p>
+                </div>
                     <div class="glass-card feature-card reveal">
                         <div class="feature-icon">🗺️</div>
                         <h3>Member Journey Tracking</h3>
-                        <p>See exactly how members progress from joining to becoming power users — or churning.</p>
+                        <p>See how members progress — and get alerts with intervention suggestions before they churn.</p>
                     </div>
                     <div class="glass-card feature-card reveal">
                         <div class="feature-icon">🔗</div>
                         <h3>Cross-Channel Analysis</h3>
-                        <p>Understand how engagement flows across channels. Find your community's gathering spots.</p>
+                        <p>Find where engagement flows — with suggestions on where to double down or restructure.</p>
                     </div>
                     <div class="glass-card feature-card reveal">
                         <div class="feature-icon">📈</div>
                         <h3>Trending Topics</h3>
-                        <p>Know what your community is talking about right now. Spot emerging conversations early.</p>
+                        <p>Know what's being discussed — with recommended talking points and content ideas to capitalize.</p>
                     </div>
                 </div>
             </div>
@@ -1064,11 +1079,11 @@
                         <p>Automate routine checks. Your moderation runs even when you're not watching.</p>
                     </div>
                 </div>
-            </div>
-        </section>
+                </div>
+            </section>
 
-        <!-- SLIDE 7: Trusted By -->
-        <section class="slide" data-slide="6">
+        <!-- SLIDE 7: Trusted By (HIDDEN - no customers yet, kept for future) -->
+        <section class="slide hidden-slide" data-slide="6">
             <div class="hero-orb" style="top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
             <div class="slide-content">
                 <p class="label reveal">Trusted Partners</p>
@@ -1090,7 +1105,7 @@
                     <div class="quote-author">— <strong>Enterprise Partner</strong>, Fortune 500 Gaming Company</div>
                 </div>
             </div>
-        </section>
+            </section>
 
         <!-- SLIDE 8: Technical Depth -->
         <section class="slide" data-slide="7">
@@ -1107,7 +1122,7 @@
                     <div class="security-badge">
                         <div class="security-badge-icon">🔐</div>
                         <div class="security-badge-text">AES-256-GCM<br>Encryption</div>
-                    </div>
+        </div>
                     <div class="security-badge">
                         <div class="security-badge-icon">🛡️</div>
                         <div class="security-badge-text">OAuth 2.0<br>Authentication</div>
@@ -1131,8 +1146,8 @@
             </div>
         </section>
 
-        <!-- SLIDE 9: ROI -->
-        <section class="slide" data-slide="8">
+        <!-- SLIDE 9: ROI (HIDDEN - no customers yet, kept for future) -->
+        <section class="slide hidden-slide" data-slide="8">
             <div class="slide-content">
                 <p class="label reveal">The Impact</p>
                 <h2 class="headline-lg reveal">
@@ -1157,7 +1172,7 @@
                     <div class="quote-author">— <strong>Community Manager</strong>, Top 100 Discord Server</div>
                 </div>
             </div>
-        </section>
+            </section>
 
         <!-- SLIDE 10: Pricing -->
         <section class="slide" data-slide="9">
@@ -1178,8 +1193,8 @@
                             <li>Health Dashboard</li>
                             <li>Basic Analytics</li>
                             <li>Email Support</li>
-                        </ul>
-                    </div>
+                    </ul>
+                </div>
                     <div class="glass-card pricing-card featured">
                         <div class="pricing-tier">Intermediate</div>
                         <div class="pricing-amount">$15,000</div>
@@ -1191,8 +1206,8 @@
                             <li>AI Sentiment & Summaries</li>
                             <li>Predictive Alerts</li>
                             <li>Priority Support + 99.5% SLA</li>
-                        </ul>
-                    </div>
+                    </ul>
+                </div>
                     <div class="glass-card pricing-card">
                         <div class="pricing-tier">Enterprise</div>
                         <div class="pricing-amount">Custom</div>
@@ -1204,11 +1219,11 @@
                             <li>Full API Access</li>
                             <li>Custom Reporting</li>
                             <li>Dedicated CSM + 99.9% SLA</li>
-                        </ul>
+                    </ul>
                     </div>
                 </div>
-            </div>
-        </section>
+                </div>
+            </section>
 
         <!-- SLIDE 11: CTA -->
         <section class="slide" data-slide="10">
@@ -1223,14 +1238,14 @@
                 </p>
                 <div class="contact-grid reveal">
                     <div class="contact-item">
-                        <strong>Email</strong> sales@vincore.io
+                        <strong>Email</strong> nicole@vincore.gg
                     </div>
                     <div class="contact-item">
                         <strong>Web</strong> vincore.gg
                     </div>
                 </div>
                 <div class="reveal" style="margin-top: 2.5rem;">
-                    <a href="mailto:sales@vincore.io" class="cta-btn">
+                    <a href="mailto:nicole@vincore.gg" class="cta-btn">
                         Schedule a Demo
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -1241,9 +1256,9 @@
                     © 2025 Vincore • Private and Confidential
                 </p>
             </div>
-        </section>
+            </section>
 
-    </div>
+        </div>
 
     <!-- Navigation -->
     <nav class="nav">
@@ -1271,7 +1286,7 @@
         // ═══════════════════════════════════════════════════════════════
 
         const deck = document.getElementById('deck');
-        const slides = document.querySelectorAll('.slide');
+        const slides = document.querySelectorAll('.slide:not(.hidden-slide)');
         const progress = document.getElementById('progress');
         const currentSlideEl = document.getElementById('currentSlide');
         const totalSlidesEl = document.getElementById('totalSlides');
