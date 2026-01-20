@@ -172,13 +172,14 @@
         }
 
         .slide-content {
-            max-width: 1200px;
+            max-width: 900px;
             width: 100%;
             text-align: center;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
         }
 
         /* Hidden slides (customers/testimonials - kept for future use) */
@@ -219,8 +220,8 @@
             font-weight: 400;
             line-height: 1.5;
             color: var(--text-secondary);
-            max-width: 650px;
-            margin: 0 auto;
+            max-width: 700px;
+            width: 100%;
         }
 
         .label {
@@ -325,13 +326,12 @@
             margin-top: 1.5rem;
             text-align: left;
             width: 100%;
-            max-width: 900px;
         }
 
         .feature-grid .feature-card {
-            flex: 0 1 calc(50% - 0.75rem);
-            min-width: 240px;
-            max-width: 360px;
+            flex: 0 1 calc(50% - 0.5rem);
+            min-width: 200px;
+            max-width: 420px;
         }
 
         @media (max-width: 700px) {
@@ -418,7 +418,6 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 1rem;
             margin-top: 1.5rem;
-            max-width: 850px;
             width: 100%;
         }
 
@@ -697,12 +696,11 @@
 
         /* Quote styling */
         .quote {
-            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-size: clamp(1.25rem, 2.5vw, 1.5rem);
             font-weight: 300;
             font-style: italic;
             color: var(--text-secondary);
-            max-width: 800px;
-            margin: 0 auto;
+            width: 100%;
             position: relative;
             padding: 0 2rem;
         }
@@ -739,13 +737,12 @@
             justify-content: center;
             gap: 1rem;
             margin-top: 2rem;
-            max-width: 900px;
+            width: 100%;
         }
 
         /* Comparison table */
         .comparison-container {
             width: 100%;
-            max-width: 900px;
             margin-top: 2rem;
         }
 
@@ -839,13 +836,13 @@
             gap: 1.25rem;
             margin-top: 1.5rem;
                 width: 100%;
-            max-width: 950px;
         }
 
         .persona-card {
-            flex: 1 1 280px;
-            max-width: 300px;
-            padding: 1.5rem;
+            flex: 0 1 calc(33.333% - 1rem);
+            min-width: 200px;
+            max-width: 280px;
+            padding: 1.25rem;
             text-align: left;
         }
 
