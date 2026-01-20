@@ -693,36 +693,6 @@
            SPECIAL SLIDE STYLES
            ═══════════════════════════════════════════════════════════════ */
 
-        /* Hero orb */
-        .hero-orb {
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(0, 212, 255, 0.15) 0%, transparent 70%);
-            filter: blur(60px);
-            pointer-events: none;
-            animation: orbPulse 8s ease-in-out infinite;
-        }
-
-        @keyframes orbPulse {
-            0%, 100% { transform: scale(1); opacity: 0.5; }
-            50% { transform: scale(1.2); opacity: 0.8; }
-        }
-
-        /* Tech grid background */
-        .tech-grid {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-image: 
-                linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px);
-            background-size: 60px 60px;
-            mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, black, transparent);
-            -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, black, transparent);
-        }
-
         /* Quote styling */
         .quote {
             font-size: clamp(1.5rem, 3vw, 2rem);
@@ -1055,7 +1025,6 @@
         
         <!-- SLIDE 1: Opening Hook -->
         <section class="slide active" data-slide="0">
-            <div class="hero-orb" style="top: 20%; left: 60%;"></div>
             <div class="slide-content">
                 <p class="label reveal">Introducing Vincore Echo</p>
                 <h1 class="headline-xl reveal glow-text">
@@ -1077,7 +1046,6 @@
 
         <!-- SLIDE 2: The Problem -->
         <section class="slide" data-slide="1">
-            <div class="tech-grid"></div>
             <div class="slide-content">
                 <p class="label reveal">The Problem</p>
                 <h2 class="headline-lg reveal">
@@ -1164,7 +1132,6 @@
 
         <!-- SLIDE 4: The Solution -->
         <section class="slide" data-slide="3">
-            <div class="hero-orb" style="top: 30%; left: 30%;"></div>
             <div class="slide-content">
                 <p class="label reveal">The Solution</p>
                 <h2 class="headline-lg reveal">
@@ -1254,7 +1221,6 @@
 
         <!-- SLIDE 7: Analytics Power -->
         <section class="slide" data-slide="6">
-            <div class="tech-grid"></div>
             <div class="slide-content">
                 <p class="label reveal">Insight + Action</p>
                 <h2 class="headline-lg reveal">
@@ -1317,9 +1283,8 @@
                 </div>
             </section>
 
-        <!-- SLIDE 7: Trusted By (HIDDEN - no customers yet, kept for future) -->
+        <!-- SLIDE 9: Trusted By (HIDDEN - no customers yet, kept for future) -->
         <section class="slide hidden-slide" data-slide="6">
-            <div class="hero-orb" style="top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
             <div class="slide-content">
                 <p class="label reveal">Trusted Partners</p>
                 <h2 class="headline-lg reveal">
@@ -1342,9 +1307,8 @@
             </div>
             </section>
 
-        <!-- SLIDE 8: Technical Depth (HIDDEN - we don't store data) -->
+        <!-- SLIDE 10: Technical Depth (HIDDEN - we don't store data) -->
         <section class="slide hidden-slide" data-slide="7">
-            <div class="tech-grid"></div>
             <div class="slide-content">
                 <p class="label reveal">Enterprise Security</p>
                 <h2 class="headline-lg reveal">
@@ -1462,7 +1426,6 @@
 
         <!-- SLIDE 12: CTA -->
         <section class="slide" data-slide="8">
-            <div class="hero-orb" style="top: 40%; left: 50%; transform: translateX(-50%);"></div>
             <div class="slide-content">
                 <p class="label reveal">Ready to Transform?</p>
                 <h2 class="headline-xl reveal glow-text">
