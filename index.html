@@ -859,6 +859,51 @@
             transform: translateY(-2px);
         }
 
+        /* Persona cards */
+        .persona-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.25rem;
+            margin-top: 1.5rem;
+                width: 100%;
+            max-width: 950px;
+        }
+
+        .persona-card {
+            flex: 1 1 280px;
+            max-width: 300px;
+            padding: 1.5rem;
+            text-align: left;
+        }
+
+        .persona-card .persona-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--cyan);
+            margin-bottom: 0.5rem;
+        }
+
+        .persona-card .persona-role {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .persona-card p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        @media (max-width: 700px) {
+            .persona-card {
+                max-width: none;
+            }
+        }
+
         /* Security badges */
         .security-badges {
             display: flex;
@@ -1134,7 +1179,7 @@
                     <span class="capability-tag">Member Intelligence</span>
                     <span class="capability-tag">Moderation Suite</span>
                     <span class="capability-tag">Predictive Alerts</span>
-                    <span class="capability-tag">Link Tracking</span>
+                    <span class="capability-tag">Multi-Language Support</span>
                     <span class="capability-tag">Executive Reports</span>
                     <span class="capability-tag">API Access</span>
                 </div>
@@ -1145,8 +1190,38 @@
             </div>
             </section>
 
-        <!-- SLIDE 5: Automated Intelligence -->
+        <!-- SLIDE 5: Who's This For -->
         <section class="slide" data-slide="4">
+            <div class="slide-content">
+                <p class="label reveal">Who's This For</p>
+                <h2 class="headline-lg reveal">
+                    A Tool for Your<br><span class="gradient-text">Entire Team</span>
+                </h2>
+                <p class="subhead reveal">
+                    Not just dashboards for leadership. Actionable tools from the boardroom to the mod queue.
+                </p>
+                <div class="persona-grid">
+                    <div class="glass-card persona-card reveal">
+                        <div class="persona-role">Leadership</div>
+                        <div class="persona-title">Stakeholders & Executives</div>
+                        <p>Get the 30-second story. Health scores, trend summaries, and ROI metrics without digging through data.</p>
+                </div>
+                    <div class="glass-card persona-card reveal">
+                        <div class="persona-role">Strategy</div>
+                        <div class="persona-title">Community Managers</div>
+                        <p>Turn insights into action. See what's working, what's not, and exactly what to do next — all in one place.</p>
+                    </div>
+                    <div class="glass-card persona-card reveal">
+                        <div class="persona-role">Operations</div>
+                        <div class="persona-title">Moderators</div>
+                        <p>Work smarter, not harder. Prioritized queues, flagged users, and multi-language translation so nothing gets missed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 6: Automated Intelligence -->
+        <section class="slide" data-slide="5">
             <div class="slide-content">
                 <p class="label reveal">Automated Intelligence</p>
                 <h2 class="headline-lg reveal">
@@ -1177,8 +1252,8 @@
             </div>
         </section>
 
-        <!-- SLIDE 6: Analytics Power -->
-        <section class="slide" data-slide="5">
+        <!-- SLIDE 7: Analytics Power -->
+        <section class="slide" data-slide="6">
             <div class="tech-grid"></div>
             <div class="slide-content">
                 <p class="label reveal">Insight + Action</p>
@@ -1207,11 +1282,11 @@
                         <p>See trending topics with content ideas and talking points to ride the wave.</p>
                     </div>
                 </div>
-            </div>
-        </section>
+                </div>
+            </section>
 
-        <!-- SLIDE 7: Moderation -->
-        <section class="slide" data-slide="6">
+        <!-- SLIDE 8: Moderation -->
+        <section class="slide" data-slide="7">
             <div class="slide-content">
                 <p class="label reveal">Advanced Moderation</p>
                 <h2 class="headline-lg reveal">
@@ -1234,9 +1309,9 @@
                         <p>Automatically flags suspicious accounts and repeat offenders. Catch raiders before damage spreads.</p>
                     </div>
                     <div class="glass-card feature-card reveal">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></div>
-                        <h3>Moderation on Autopilot</h3>
-                        <p>Automate routine checks. Your server stays clean even when you're sleeping.</p>
+                        <div class="feature-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+                        <h3>Global Community Support</h3>
+                        <p>Multi-language translation captures sentiment across languages — so non-native mods never miss context.</p>
                     </div>
                 </div>
                 </div>
@@ -1385,8 +1460,8 @@
                 </div>
             </section>
 
-        <!-- SLIDE 11: CTA -->
-        <section class="slide" data-slide="6">
+        <!-- SLIDE 12: CTA -->
+        <section class="slide" data-slide="8">
             <div class="hero-orb" style="top: 40%; left: 50%; transform: translateX(-50%);"></div>
             <div class="slide-content">
                 <p class="label reveal">Ready to Transform?</p>
