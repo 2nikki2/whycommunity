@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vincore Echo - Superpower Your Discord</title>
+    <title>Intro to Community - Why Community Powers Modern Brands</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
         /* ═══════════════════════════════════════════════════════════════
-           VINCORE ECHO - INTERACTIVE DECK
-           A story of superpowering Discord communities
+           INTRO TO COMMUNITY - INTERACTIVE DECK
+           Why Discord Powers Modern Brand Communities
            ═══════════════════════════════════════════════════════════════ */
 
         :root {
@@ -20,7 +20,9 @@
             --surface: #111820;
             --elevated: #1a2332;
             
-            /* Accent spectrum */
+            /* Discord-inspired accents */
+            --discord-blurple: #5865F2;
+            --discord-blurple-glow: rgba(88, 101, 242, 0.4);
             --cyan: #00d4ff;
             --cyan-glow: rgba(0, 212, 255, 0.4);
             --purple: #a855f7;
@@ -88,11 +90,11 @@
             height: 200%;
             background-image: 
                 radial-gradient(2px 2px at 20px 30px, rgba(255,255,255,0.8), transparent),
-                radial-gradient(2px 2px at 40px 70px, rgba(0,212,255,0.6), transparent),
+                radial-gradient(2px 2px at 40px 70px, rgba(88,101,242,0.6), transparent),
                 radial-gradient(1px 1px at 90px 40px, rgba(255,255,255,0.6), transparent),
                 radial-gradient(2px 2px at 160px 120px, rgba(168,85,247,0.5), transparent),
                 radial-gradient(1px 1px at 230px 80px, rgba(255,255,255,0.5), transparent),
-                radial-gradient(2px 2px at 300px 200px, rgba(0,212,255,0.4), transparent),
+                radial-gradient(2px 2px at 300px 200px, rgba(88,101,242,0.4), transparent),
                 radial-gradient(1px 1px at 370px 150px, rgba(255,255,255,0.7), transparent),
                 radial-gradient(2px 2px at 440px 280px, rgba(168,85,247,0.4), transparent);
             background-size: 500px 500px;
@@ -118,9 +120,9 @@
             width: 100%;
             height: 100%;
             background: 
-                radial-gradient(ellipse 80% 50% at 50% 0%, rgba(0, 212, 255, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse 80% 50% at 50% 0%, rgba(88, 101, 242, 0.08) 0%, transparent 50%),
                 radial-gradient(ellipse 60% 40% at 100% 100%, rgba(168, 85, 247, 0.06) 0%, transparent 50%),
-                radial-gradient(ellipse 50% 50% at 0% 50%, rgba(0, 212, 255, 0.04) 0%, transparent 50%);
+                radial-gradient(ellipse 50% 50% at 0% 50%, rgba(88, 101, 242, 0.04) 0%, transparent 50%);
             pointer-events: none;
             z-index: 1;
         }
@@ -229,7 +231,7 @@
             font-weight: 500;
             letter-spacing: 0.15em;
             text-transform: uppercase;
-            color: var(--cyan);
+            color: var(--discord-blurple);
             margin-bottom: 1rem;
         }
 
@@ -243,8 +245,8 @@
 
         .glow-text {
             text-shadow: 
-                0 0 40px var(--cyan-glow),
-                0 0 80px rgba(0, 212, 255, 0.2);
+                0 0 40px var(--discord-blurple-glow),
+                0 0 80px rgba(88, 101, 242, 0.2);
         }
 
         /* ═══════════════════════════════════════════════════════════════
@@ -314,7 +316,7 @@
 
         .glass-card:hover {
             transform: translateY(-4px);
-            border-color: rgba(0, 212, 255, 0.3);
+            border-color: rgba(88, 101, 242, 0.3);
         }
 
         .feature-grid {
@@ -363,7 +365,7 @@
             width: 40px;
             height: 40px;
             border-radius: 10px;
-            background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(168, 85, 247, 0.2));
+            background: linear-gradient(135deg, rgba(88, 101, 242, 0.2), rgba(168, 85, 247, 0.2));
             display: flex;
             align-items: center;
             justify-content: center;
@@ -373,7 +375,7 @@
         .feature-icon svg {
             width: 20px;
             height: 20px;
-            stroke: var(--cyan);
+            stroke: var(--discord-blurple);
             stroke-width: 1.5;
             fill: none;
         }
@@ -399,7 +401,7 @@
             font-size: clamp(3rem, 8vw, 5rem);
             font-weight: 700;
             line-height: 1;
-            background: linear-gradient(135deg, var(--cyan), var(--purple));
+            background: linear-gradient(135deg, var(--discord-blurple), var(--purple));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -460,7 +462,7 @@
         .pricing-tier {
             font-size: 0.85rem;
             font-weight: 500;
-            color: var(--cyan);
+            color: var(--discord-blurple);
             margin-bottom: 0.5rem;
             text-transform: uppercase;
             letter-spacing: 0.1em;
@@ -572,8 +574,8 @@
         }
 
         .nav-dot.active {
-            background: var(--cyan);
-            box-shadow: 0 0 10px var(--cyan-glow);
+            background: var(--discord-blurple);
+            box-shadow: 0 0 10px var(--discord-blurple-glow);
         }
 
         .nav-btn {
@@ -594,8 +596,8 @@
         }
 
         .nav-btn:hover {
-            background: rgba(0, 212, 255, 0.1);
-            border-color: var(--cyan);
+            background: rgba(88, 101, 242, 0.1);
+            border-color: var(--discord-blurple);
             transform: scale(1.1);
         }
 
@@ -616,7 +618,7 @@
             top: 0;
             left: 0;
             height: 3px;
-            background: linear-gradient(90deg, var(--cyan), var(--purple));
+            background: linear-gradient(90deg, var(--discord-blurple), var(--purple));
             z-index: 100;
             transition: width var(--transition-medium) var(--ease-out-expo);
         }
@@ -633,7 +635,7 @@
         }
 
         .slide-counter .current {
-            color: var(--cyan);
+            color: var(--discord-blurple);
             font-weight: 500;
         }
 
@@ -650,7 +652,7 @@
         }
 
         .brand-mark span {
-            color: var(--cyan);
+            color: var(--discord-blurple);
         }
 
         /* ═══════════════════════════════════════════════════════════════
@@ -674,12 +676,12 @@
             transition: 
                 transform var(--transition-fast) var(--ease-out-back),
                 box-shadow var(--transition-fast);
-            box-shadow: 0 4px 20px rgba(0, 212, 255, 0.3);
+            box-shadow: 0 4px 20px rgba(88, 101, 242, 0.3);
         }
 
         .cta-btn:hover {
             transform: translateY(-2px) scale(1.02);
-            box-shadow: 0 8px 40px rgba(0, 212, 255, 0.4);
+            box-shadow: 0 8px 40px rgba(88, 101, 242, 0.4);
         }
 
         .cta-btn svg {
@@ -714,7 +716,7 @@
             top: -1rem;
             font-size: 6rem;
             font-style: normal;
-            color: var(--cyan);
+            color: var(--discord-blurple);
             opacity: 0.2;
             font-family: Georgia, serif;
             line-height: 1;
@@ -778,7 +780,7 @@
         }
 
         .comparison-table th:nth-child(3) {
-            color: var(--cyan);
+            color: var(--discord-blurple);
         }
 
         .comparison-table td {
@@ -853,7 +855,7 @@
         .persona-card .persona-title {
             font-size: 1.1rem;
             font-weight: 600;
-            color: var(--cyan);
+            color: var(--discord-blurple);
             margin-bottom: 0.5rem;
         }
 
@@ -869,6 +871,13 @@
             font-size: 0.85rem;
             color: var(--text-secondary);
             line-height: 1.5;
+        }
+
+        /* Gradient border for card headers */
+        .card-header-gradient {
+            border-left: 3px solid;
+            border-image: linear-gradient(180deg, var(--discord-blurple), var(--purple)) 1;
+            padding-left: 1rem;
         }
 
         /* Security badges */
@@ -931,6 +940,29 @@
 
         .contact-item strong {
             color: var(--text-primary);
+        }
+
+        /* Discord logo styling */
+        .discord-logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1.5rem;
+            fill: var(--discord-blurple);
+        }
+
+        /* Highlight box */
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(88, 101, 242, 0.1), rgba(168, 85, 247, 0.1));
+            border: 1px solid rgba(88, 101, 242, 0.3);
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .highlight-box strong {
+            color: var(--discord-blurple);
         }
 
         /* ═══════════════════════════════════════════════════════════════
@@ -1070,308 +1102,334 @@
 
     <!-- Slide counter -->
     <div class="slide-counter">
-        <span class="current" id="currentSlide">01</span> / <span id="totalSlides">10</span>
+        <span class="current" id="currentSlide">01</span> / <span id="totalSlides">11</span>
                 </div>
 
     <!-- Main deck -->
     <div class="deck" id="deck">
         
-        <!-- SLIDE 1: Opening Hook -->
+        <!-- SLIDE 1: Opening -->
         <section class="slide active" data-slide="0">
             <div class="slide-content">
-                <p class="label reveal">Introducing Vincore Echo</p>
+                <p class="label reveal">Intro to Community</p>
                 <h1 class="headline-xl reveal glow-text">
-                    Superpower<br>Your Discord
+                    Why Community?
                 </h1>
                 <p class="subhead reveal">
-                    Intelligent analytics and community insights that transform how you understand, grow, and protect your community.
+                    A simple guide to understanding why Discord is the most powerful platform for building engaged brand communities — and how Vincore uses it.
                 </p>
                 <div class="reveal" style="margin-top: 2.5rem;">
                     <button class="cta-btn" onclick="nextSlide()">
-                        Explore the Platform
+                        Let's Explore
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                     </button>
                 </div>
-                </div>
-            </section>
+            </div>
+        </section>
 
-        <!-- SLIDE 2: The Problem -->
+        <!-- SLIDE 2: Discord by the Numbers -->
         <section class="slide" data-slide="1">
             <div class="slide-content">
-                <p class="label reveal">The Problem</p>
+                <p class="label reveal">The Platform</p>
                 <h2 class="headline-lg reveal">
-                    Analytics Without<br><span class="gradient-text">Action is Noise</span>
+                    Discord Is<br><span class="gradient-text">Massive</span>
                 </h2>
                 <p class="subhead reveal">
-                    Most platforms give you dashboards full of charts — but no story, no context, and no clear next steps. Meanwhile, problems fester.
+                    Originally built for gamers, Discord has evolved into the go-to platform for communities of all kinds.
                 </p>
-                <div class="persona-grid reveal" style="margin-top: 1.5rem;">
-                    <div class="glass-card persona-card">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
-                        <h3 class="persona-title">Issues That Escalate</h3>
-                        <p>Small frustrations become community meltdowns because you didn't see them coming.</p>
+                <div class="stats-row reveal">
+                    <div class="stat">
+                        <div class="stat-value">200M+</div>
+                        <div class="stat-label">Monthly Active Users</div>
                     </div>
-                    <div class="glass-card persona-card">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="18" y1="8" x2="23" y2="13"/><line x1="23" y1="8" x2="18" y2="13"/></svg></div>
-                        <h3 class="persona-title">Members Who Churn Silently</h3>
-                        <p>They leave without warning because nobody caught the signals in time.</p>
+                    <div class="stat">
+                        <div class="stat-value">19M+</div>
+                        <div class="stat-label">Active Servers</div>
                     </div>
-                    <div class="glass-card persona-card">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-                        <h3 class="persona-title">Hours Wasted on Reports</h3>
-                        <p>Time spent building reports that should take seconds — time that could go to your community.</p>
+                    <div class="stat">
+                        <div class="stat-value">4B+</div>
+                        <div class="stat-label">Daily Messages</div>
                     </div>
+                </div>
+                <div class="highlight-box reveal" style="background: linear-gradient(135deg, rgba(88, 101, 242, 0.1), rgba(168, 85, 247, 0.1)); border: 1px solid rgba(88, 101, 242, 0.3); border-radius: 12px; padding: 1rem 1.5rem; margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                    <strong style="color: var(--discord-blurple);">Key Insight:</strong> Discord users spend an average of 280 minutes per month on the platform — that's nearly 5 hours of engaged attention.
                 </div>
             </div>
         </section>
 
-        <!-- SLIDE 3: Why We Built This -->
+        <!-- SLIDE 3: Why Discord Works -->
         <section class="slide" data-slide="2">
-            <div class="slide-content">
-                <p class="label reveal">Why We Built This</p>
-                <h2 class="headline-lg reveal">
-                    We've Lived<br><span class="gradient-text">These Problems</span>
-                </h2>
-                <p class="subhead reveal">
-                    Our team has managed Discord communities for enterprise clients across sports, Web3, blockchain, and AI — and we've been active community members too. We've seen the gaps firsthand.
-                </p>
-                <div class="persona-grid reveal" style="margin-top: 1.5rem;">
-                    <div class="glass-card persona-card">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-                        <h3 class="persona-title">Enterprise Experience</h3>
-                        <p>We've run communities for major brands — we know what stakeholders need and what moderators deal with daily.</p>
-                    </div>
-                    <div class="glass-card persona-card">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></div>
-                        <h3 class="persona-title">Community Members Too</h3>
-                        <p>We're not just operators — we're members. We understand the experience from every angle.</p>
-                    </div>
-                    <div class="glass-card persona-card">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
-                        <h3 class="persona-title">Gaps Left Unattended</h3>
-                        <p>Issues that fester, signals that get missed, problems that escalate — we built Echo to fix what existing tools ignore.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SLIDE 4: The Difference (Comparison) -->
-        <section class="slide" data-slide="3">
             <div class="slide-content">
                 <p class="label reveal">The Difference</p>
                 <h2 class="headline-lg reveal">
-                    Why We're<br><span class="gradient-text">Not Like the Rest</span>
+                    Why Discord<br><span class="gradient-text">Beats Social Media</span>
                 </h2>
                 <p class="subhead reveal">
-                    Most Discord analytics tools are passive dashboards. We're an intelligence platform.
-                </p>
-                <div class="comparison-container reveal">
-                    <table class="comparison-table">
-                    <thead>
-                        <tr>
-                                <th>Capability</th>
-                                <th>Basic Analytics</th>
-                                <th>Vincore Echo</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                            <tr>
-                                <td>Shows charts & graphs</td>
-                                <td class="check">✓</td>
-                                <td class="check">✓ Plus context</td>
-                        </tr>
-                        <tr>
-                                <td>Explains why metrics changed</td>
-                                <td class="x">✗</td>
-                                <td class="check">✓ Automated insights</td>
-                        </tr>
-                        <tr>
-                                <td>Tells you what to do next</td>
-                                <td class="x">✗</td>
-                                <td class="check">✓ Actionable recommendations</td>
-                        </tr>
-                        <tr>
-                                <td>Predicts problems before they happen</td>
-                                <td class="x">✗</td>
-                                <td class="check">✓ Predictive alerts</td>
-                        </tr>
-                        <tr>
-                                <td>Tracks full member journey</td>
-                                <td class="x">✗</td>
-                                <td class="check">✓ Onboarding to churn</td>
-                        </tr>
-                        <tr>
-                                <td>Enterprise security & audit trails</td>
-                                <td class="x">✗</td>
-                                <td class="check">✓ OAuth, RBAC, full logging</td>
-                        </tr>
-                    </tbody>
-                </table>
-                </div>
-            </div>
-            </section>
-
-        <!-- SLIDE 5: The Solution -->
-        <section class="slide" data-slide="4">
-            <div class="slide-content">
-                <p class="label reveal">The Solution</p>
-                <h2 class="headline-lg reveal">
-                    Meet <span class="gradient-text">Vincore Echo</span>
-                </h2>
-                <p class="subhead reveal">
-                    Community intelligence that tells you what's happening, why it matters, and exactly what to do next.
+                    Social platforms rent you an audience. Discord lets you own your community.
                 </p>
                 <div class="persona-grid reveal" style="margin-top: 1.5rem;">
                     <div class="glass-card persona-card">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
-                        <h3 class="persona-title">Insights Immediately</h3>
-                        <p>See your first insights the moment you connect — no waiting, no setup complexity.</p>
+                        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M2 12h20"/></svg></div>
+                        <h3 class="persona-title">Real-Time Connection</h3>
+                        <p>Live voice, video, and text create instant bonds that posts and comments can't match.</p>
                     </div>
                     <div class="glass-card persona-card">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-                        <h3 class="persona-title">Retroactive Analysis</h3>
-                        <p>We analyze from day one — even retroactively based on your subscription tier.</p>
+                        <div class="feature-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div>
+                        <h3 class="persona-title">Organized Spaces</h3>
+                        <p>Channels and categories keep conversations focused. No algorithmic chaos.</p>
                     </div>
                     <div class="glass-card persona-card">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
-                        <h3 class="persona-title">Works With Your Setup</h3>
-                        <p>Connects to your existing Discord in minutes. No engineering required.</p>
+                        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                        <h3 class="persona-title">Direct Relationships</h3>
+                        <p>No algorithm between you and your members. Every message reaches who it should.</p>
                     </div>
                 </div>
-                <p class="privacy-note reveal" style="margin-top: 1rem; font-size: 0.8rem; color: var(--text-muted);">
-                    <svg style="width: 12px; height: 12px; vertical-align: middle; margin-right: 0.3rem; stroke: var(--emerald);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    Privacy-first: We don't store your data. Insights generated in real-time.
-                </p>
             </div>
-            </section>
+        </section>
 
-        <!-- SLIDE 6: Who's This For -->
-        <section class="slide" data-slide="5">
+        <!-- SLIDE 4: Core Strengths -->
+        <section class="slide" data-slide="3">
             <div class="slide-content">
-                <p class="label reveal">Who's This For</p>
+                <p class="label reveal">Platform Strengths</p>
                 <h2 class="headline-lg reveal">
-                    A Tool for Your<br><span class="gradient-text">Entire Team</span>
+                    What Makes Discord<br><span class="gradient-text">Powerful</span>
+                </h2>
+                <div class="feature-grid">
+                    <div class="glass-card feature-card reveal">
+                        <div class="feature-icon"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+                        <h3>Instant Communication</h3>
+                        <p>Text, voice, video, and screen sharing — all in one place, all in real-time.</p>
+                    </div>
+                    <div class="glass-card feature-card reveal">
+                        <div class="feature-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                        <h3>Always-On Presence</h3>
+                        <p>Your community space exists 24/7. Members come and go as they please.</p>
+                    </div>
+                    <div class="glass-card feature-card reveal">
+                        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+                        <h3>Layered Permissions</h3>
+                        <p>Roles let you create tiers — VIPs, moderators, newcomers — with different access.</p>
+                    </div>
+                    <div class="glass-card feature-card reveal">
+                        <div class="feature-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></div>
+                        <h3>Cross-Platform</h3>
+                        <p>Desktop, mobile, browser — members can connect from anywhere.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 5: Safety & Moderation -->
+        <section class="slide" data-slide="4">
+            <div class="slide-content">
+                <p class="label reveal">Trust & Safety</p>
+                <h2 class="headline-lg reveal">
+                    Built-In<br><span class="gradient-text">Protection</span>
                 </h2>
                 <p class="subhead reveal">
-                    Not just dashboards for leadership. Actionable tools from the boardroom to the mod queue.
+                    Discord takes safety seriously — and gives you powerful tools to keep your community secure.
                 </p>
-                <div class="persona-grid">
-                    <div class="glass-card persona-card reveal">
-                        <div class="persona-role">Leadership</div>
-                        <div class="persona-title">Stakeholders & Executives</div>
-                        <p>Week-over-week trends at a glance. Automated weekly emails deliver executive snapshots — no digging required.</p>
-                </div>
-                    <div class="glass-card persona-card reveal">
-                        <div class="persona-role">Strategy</div>
-                        <div class="persona-title">Community Managers</div>
-                        <p>Turn insights into action. See what's working, what's not, and exactly what to do next — all in one place.</p>
+                <div class="feature-grid">
+                    <div class="glass-card feature-card reveal">
+                        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                        <h3>AutoMod</h3>
+                        <p>AI-powered filtering catches spam, slurs, and harmful content automatically.</p>
                     </div>
-                    <div class="glass-card persona-card reveal">
-                        <div class="persona-role">Operations</div>
-                        <div class="persona-title">Moderators</div>
-                        <p>Work smarter, not harder. Prioritized queues, flagged users, and multi-language translation so nothing gets missed.</p>
+                    <div class="glass-card feature-card reveal">
+                        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg></div>
+                        <h3>Verification Levels</h3>
+                        <p>Require email, phone, or server membership time before members can participate.</p>
+                    </div>
+                    <div class="glass-card feature-card reveal">
+                        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+                        <h3>Raid Protection</h3>
+                        <p>Detect and block coordinated attacks before they disrupt your community.</p>
+                    </div>
+                    <div class="glass-card feature-card reveal">
+                        <div class="feature-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg></div>
+                        <h3>Moderation Tools</h3>
+                        <p>Timeouts, bans, message deletion, and audit logs give you full control.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SLIDE 7: Automated Intelligence -->
+        <!-- SLIDE 6: Applications & Integrations -->
+        <section class="slide" data-slide="5">
+            <div class="slide-content">
+                <p class="label reveal">Customization</p>
+                <h2 class="headline-lg reveal">
+                    Applications &<br><span class="gradient-text">Integrations</span>
+                </h2>
+                <p class="subhead reveal">
+                    Discord's extensive APIs and SDKs let you extend functionality with thousands of bots and custom integrations.
+                </p>
+                <div class="persona-grid reveal" style="margin-top: 1.5rem;">
+                    <div class="glass-card persona-card">
+                        <div class="feature-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+                        <h3 class="persona-title">Custom Applications</h3>
+                        <p>Tailored applications and workflows designed to drive entertainment, engagement, and retention — built specifically for your community.</p>
+                    </div>
+                    <div class="glass-card persona-card">
+                        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+                        <h3 class="persona-title">Social SDKs</h3>
+                        <p>Discord Social SDKs, linked accounts, and rich presence create seamless cross-platform experiences.</p>
+                    </div>
+                    <div class="glass-card persona-card">
+                        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>
+                        <h3 class="persona-title">Integrations</h3>
+                        <p>Connect to Twitch, YouTube, Twitter, CRMs, and more. Your community, your tools.</p>
+                    </div>
+                </div>
+                <div class="highlight-box reveal" style="background: linear-gradient(135deg, rgba(88, 101, 242, 0.1), rgba(168, 85, 247, 0.1)); border: 1px solid rgba(88, 101, 242, 0.3); border-radius: 12px; padding: 1rem 1.5rem; margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                    <strong style="color: var(--discord-blurple);">Popular Applications:</strong> MEE6 (moderation), Carl-bot (automation), Dyno (management), Ticket Tool (support)
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 7: Engagement -->
         <section class="slide" data-slide="6">
             <div class="slide-content">
-                <p class="label reveal">Automated Intelligence</p>
+                <p class="label reveal">Engagement</p>
                 <h2 class="headline-lg reveal">
-                    Know How They Feel<br><span class="gradient-text">Before It's Too Late</span>
+                    Driving<br><span class="gradient-text">Meaningful Activity</span>
                 </h2>
+                <p class="subhead reveal">
+                    Great communities don't happen by accident. Here's what drives engagement on Discord.
+                </p>
                 <div class="feature-grid">
                     <div class="glass-card feature-card reveal">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"/><path d="M9 21h6"/><path d="M10 17v4"/><path d="M14 17v4"/></svg></div>
-                        <h3>Catch Mood Shifts Early</h3>
-                        <p>Real-time sentiment analysis detects frustration the moment it starts — so you can act before meltdowns happen.</p>
-                </div>
-                    <div class="glass-card feature-card reveal">
                         <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg></div>
-                        <h3>Automated Executive Snapshots</h3>
-                        <p>Weekly email summaries with easy subscription management. Leadership stays informed without chasing reports.</p>
+                        <h3>Regular Events</h3>
+                        <p>AMAs, game nights, watch parties — give members reasons to show up.</p>
                     </div>
                     <div class="glass-card feature-card reveal">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
-                        <h3>Know Exactly What to Do</h3>
-                        <p>Personalized recommendations based on your community's patterns. No more guessing what to try next.</p>
+                        <div class="feature-icon"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                        <h3>Recognition Systems</h3>
+                        <p>Levels, badges, and special roles reward active members and build loyalty.</p>
                     </div>
                     <div class="glass-card feature-card reveal">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
-                        <h3>Stop Fires Before They Start</h3>
-                        <p>Predictive alerts notify you hours before issues escalate. Fix problems when they're small.</p>
+                        <div class="feature-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></div>
+                        <h3>Exclusive Content</h3>
+                        <p>Behind-the-scenes, early access, and members-only content make people feel special.</p>
+                    </div>
+                    <div class="glass-card feature-card reveal">
+                        <div class="feature-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></div>
+                        <h3>Human Connection</h3>
+                        <p>Off-topic channels and casual spaces let personalities shine through.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SLIDE 8: Analytics Power -->
+        <!-- SLIDE 8: Retention -->
         <section class="slide" data-slide="7">
             <div class="slide-content">
-                <p class="label reveal">Insight + Action</p>
+                <p class="label reveal">Retention</p>
                 <h2 class="headline-lg reveal">
-                    One Number That Tells You<br><span class="gradient-text">If Things Are Okay</span>
+                    Keeping Members<br><span class="gradient-text">Coming Back</span>
                 </h2>
-                <div class="feature-grid">
-                    <div class="glass-card feature-card reveal">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7 7-7z"/></svg></div>
-                        <h3>Instant Community Pulse</h3>
-                        <p>Health Score tells you at a glance if things are good or going sideways — plus what to fix.</p>
-                </div>
-                    <div class="glass-card feature-card reveal">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M6 21V9a9 9 0 0 0 9 9"/></svg></div>
-                        <h3>See Where Members Drop Off</h3>
-                        <p>Track the full journey from join to active. Get alerts with re-engagement suggestions before they churn.</p>
+                <p class="subhead reveal">
+                    Getting members is one thing. Keeping them engaged for months and years is another.
+                </p>
+                <div class="persona-grid reveal" style="margin-top: 1.5rem;">
+                    <div class="glass-card persona-card">
+                        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                        <h3 class="persona-title">Strong Onboarding</h3>
+                        <p>Welcome flows, intro channels, and buddy systems help new members find their footing fast.</p>
                     </div>
-                    <div class="glass-card feature-card reveal">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>
-                        <h3>Find Your Best Channels</h3>
-                        <p>Know where engagement flows. Get suggestions on where to double down or restructure.</p>
+                    <div class="glass-card persona-card">
+                        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                        <h3 class="persona-title">Sub-Communities</h3>
+                        <p>Interest-based channels let members find their tribe within the larger community.</p>
                     </div>
-                    <div class="glass-card feature-card reveal">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M23 6l-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/></svg></div>
-                        <h3>Capitalize on What's Hot</h3>
-                        <p>See trending topics with content ideas and talking points to ride the wave.</p>
+                    <div class="glass-card persona-card">
+                        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M23 6l-9.5 9.5-5-5L1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+                        <h3 class="persona-title">Consistent Value</h3>
+                        <p>Regular content, updates, and touchpoints remind members why they joined.</p>
                     </div>
                 </div>
+                <div class="highlight-box reveal" style="background: linear-gradient(135deg, rgba(88, 101, 242, 0.1), rgba(168, 85, 247, 0.1)); border: 1px solid rgba(88, 101, 242, 0.3); border-radius: 12px; padding: 1rem 1.5rem; margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                    <strong style="color: var(--discord-blurple);">Retention Tip:</strong> Members who make a friend in the first week are 3x more likely to stay active long-term.
                 </div>
-            </section>
+            </div>
+        </section>
 
-        <!-- SLIDE 9: Moderation -->
+        <!-- SLIDE 8: The Vincore Difference -->
         <section class="slide" data-slide="8">
             <div class="slide-content">
-                <p class="label reveal">Advanced Moderation</p>
+                <p class="label reveal">The Vincore Difference</p>
                 <h2 class="headline-lg reveal">
-                    Protect What<br><span class="gradient-text">You've Built</span>
+                    We Don't Just Use Discord.<br><span class="gradient-text">We Live In It.</span>
                 </h2>
-                <div class="feature-grid">
-                    <div class="glass-card feature-card reveal">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 12l2 2 4-4"/></svg></div>
-                        <h3>Handle What Matters First</h3>
-                        <p>Smart prioritization surfaces urgent issues first. Important things rise, noise fades.</p>
+                <p class="subhead reveal">
+                    From member onboarding to API architecture, 
+                    our team has built, scaled, and saved 
+                    communities across every industry.
+                </p>
+            </div>
+        </section>
+
+        <!-- SLIDE 9: Full Stack Expertise -->
+        <section class="slide" data-slide="9">
+            <div class="slide-content">
+                <p class="label reveal">Full Stack Expertise</p>
+                <h2 class="headline-lg reveal">
+                    Community to Code.<br><span class="gradient-text">We Go Deep.</span>
+                </h2>
+                <div class="persona-grid reveal" style="margin-top: 1.5rem;">
+                    <div class="glass-card persona-card">
+                        <h3 class="persona-title card-header-gradient">Community<br>Layer</h3>
+                        <p style="margin-top: 1rem;">
+                            • Onboarding Flows<br>
+                            • Engagement Programs<br>
+                            • Retention Systems<br>
+                            • Culture Building
+                        </p>
                     </div>
-                    <div class="glass-card feature-card reveal">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15l3 3 3-3"/></svg></div>
-                        <h3>Risk Signal Detection</h3>
-                        <p>Surfaces at-risk members, scammer patterns, and concerning behavior before they impact community health.</p>
+                    <div class="glass-card persona-card">
+                        <h3 class="persona-title card-header-gradient">Server<br>Architecture</h3>
+                        <p style="margin-top: 1rem;">
+                            • Channel Strategy<br>
+                            • Role Hierarchies<br>
+                            • Permission Design<br>
+                            • Moderation Workflows
+                        </p>
                     </div>
-                    <div class="glass-card feature-card reveal">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4"/><circle cx="12" cy="17" r="0.5" fill="currentColor"/></svg></div>
-                        <h3>Spot Bad Actors Fast</h3>
-                        <p>Automatically flags suspicious accounts and repeat offenders. Catch raiders before damage spreads.</p>
-                    </div>
-                    <div class="glass-card feature-card reveal">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
-                        <h3>Global Community Support</h3>
-                        <p>Multi-language translation captures sentiment across languages — so non-native mods never miss context.</p>
+                    <div class="glass-card persona-card">
+                        <h3 class="persona-title card-header-gradient">Technical<br>Depth</h3>
+                        <p style="margin-top: 1rem;">
+                            • Custom Bots<br>
+                            • API Integrations<br>
+                            • SDKs & Development Tools<br>
+                            • Webhooks & Automation<br>
+                            • Third-Party Connections<br>
+                            • Activities
+                        </p>
                     </div>
                 </div>
-                </div>
-            </section>
+                <p class="subhead reveal" style="margin-top: 1.5rem;">
+                    Whether you need strategy or implementation, 
+                    we've got you covered.
+                </p>
+            </div>
+        </section>
+
+        <!-- SLIDE 10: The Confidence Closer -->
+        <section class="slide" data-slide="10">
+            <div class="slide-content">
+                <p class="label reveal">Why Vincore</p>
+                <h2 class="headline-lg reveal">
+                    Other Agencies Learn Discord.<br><span class="gradient-text">We Wrote the Playbook.</span>
+                </h2>
+                <p class="subhead reveal" style="margin-top: 2rem;">
+                    We've moderated at 3am, shipped bots at midnight, 
+                    and saved launches before coffee.
+                </p>
+            </div>
+        </section>
 
         <!-- SLIDE 9: Trusted By (HIDDEN - no customers yet, kept for future) -->
         <section class="slide hidden-slide" data-slide="6">
@@ -1514,36 +1572,36 @@
                 </div>
             </section>
 
-        <!-- SLIDE 13: CTA -->
-        <section class="slide" data-slide="9">
+        <!-- SLIDE 11: CTA -->
+        <section class="slide" data-slide="10">
             <div class="slide-content">
                 <p class="label reveal">Get Started</p>
                 <h2 class="headline-lg reveal">
-                    See It In Action<br><span class="gradient-text">For Your Community</span>
+                    Ready to Build<br><span class="gradient-text">Your Community?</span>
                 </h2>
                 <p class="subhead reveal">
-                    Get a personalized demo tailored to your Discord. See exactly how Echo would work for you.
+                    Discord is the foundation. Vincore is the expertise that makes it thrive.
                 </p>
                 <div class="persona-grid reveal" style="margin-top: 1rem;">
                     <div class="glass-card persona-card" style="text-align: center;">
-                        <div class="feature-icon" style="margin: 0 auto 0.5rem;"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
-                        <h3 class="persona-title">Free Trial Period</h3>
-                        <p>Try Echo risk-free. No commitment, cancel anytime.</p>
+                        <div class="feature-icon" style="margin: 0 auto 0.5rem;"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+                        <h3 class="persona-title">Strategy Session</h3>
+                        <p>Let's discuss your goals and how Discord can help you achieve them.</p>
                     </div>
                     <div class="glass-card persona-card" style="text-align: center;">
-                        <div class="feature-icon" style="margin: 0 auto 0.5rem;"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-                        <h3 class="persona-title">5-Minute Setup</h3>
-                        <p>Connect your Discord and see insights immediately.</p>
+                        <div class="feature-icon" style="margin: 0 auto 0.5rem;"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+                        <h3 class="persona-title">Custom Proposal</h3>
+                        <p>Get a tailored plan based on your industry, audience, and objectives.</p>
                     </div>
                     <div class="glass-card persona-card" style="text-align: center;">
-                        <div class="feature-icon" style="margin: 0 auto 0.5rem;"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
-                        <h3 class="persona-title">No Engineering Required</h3>
-                        <p>Works with your existing setup. Zero technical lift.</p>
+                        <div class="feature-icon" style="margin: 0 auto 0.5rem;"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+                        <h3 class="persona-title">Launch Support</h3>
+                        <p>We'll help you build, launch, and grow your community from day one.</p>
                     </div>
                 </div>
                 <div class="reveal" style="margin-top: 1.5rem;">
-                    <a href="mailto:nicole@vincore.gg?subject=Demo Request for Vincore Echo" class="cta-btn">
-                        Get a Personalized Demo
+                    <a href="mailto:nicole@vincore.gg?subject=Discord Community Inquiry" class="cta-btn">
+                        Let's Talk
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
@@ -1553,7 +1611,7 @@
                     nicole@vincore.gg • vincore.gg
                 </p>
             </div>
-            </section>
+        </section>
 
         </div>
 
