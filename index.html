@@ -1087,6 +1087,61 @@
             opacity: 0 !important;
             transition: opacity 0.3s;
         }
+
+        /* ═══════════════════════════════════════════════════════════════
+           LOGO GRID
+           ═══════════════════════════════════════════════════════════════ */
+
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 2rem;
+            align-items: center;
+            justify-items: center;
+            padding: 2rem 0;
+        }
+
+        .logo-item {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 1rem;
+            transition: all var(--transition-medium) ease;
+            border: 1px solid rgba(88, 101, 242, 0.2);
+        }
+
+        .logo-item:hover {
+            background: rgba(88, 101, 242, 0.1);
+            border-color: rgba(88, 101, 242, 0.4);
+            transform: scale(1.05);
+        }
+
+        .logo-item img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            filter: brightness(0.9);
+            transition: filter var(--transition-medium) ease;
+        }
+
+        .logo-item:hover img {
+            filter: brightness(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .logo-grid {
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                gap: 1.5rem;
+            }
+            
+            .logo-item {
+                height: 80px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1573,7 +1628,39 @@
             </section>
 
         <!-- SLIDE 11: CTA -->
+        <!-- LOGO GRID SLIDE -->
         <section class="slide" data-slide="10">
+            <div class="slide-content">
+                <p class="label reveal">Used By</p>
+                <h2 class="headline-lg reveal">
+                    Trusted By Leading<br><span class="gradient-text">Brands</span>
+                </h2>
+                
+                <div class="logo-grid reveal" style="margin-top: 3rem;">
+                    <div class="logo-item">
+                        <img src="assets/logo1.png" alt="Brand 1">
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/logo2.png" alt="Brand 2">
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/logo3.png" alt="Brand 3">
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/logo4.png" alt="Brand 4">
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/logo5.png" alt="Brand 5">
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/logo6.png" alt="Brand 6">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SLIDE -->
+        <section class="slide" data-slide="11">
             <div class="slide-content">
                 <p class="label reveal">Get Started</p>
                 <h2 class="headline-lg reveal">
