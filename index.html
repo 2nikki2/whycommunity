@@ -1265,7 +1265,8 @@
             grid-template-columns: 1fr 1fr;
             gap: 0;
             width: 100%;
-            height: 100%;
+            flex: 1;
+            max-height: 65%;
             align-items: stretch;
         }
 
@@ -1273,7 +1274,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 1.5rem;
+            gap: 1rem;
         }
 
         .vincore-box,
@@ -1283,39 +1284,39 @@
             border-left: 3px solid;
             border-image: linear-gradient(to bottom, var(--purple), var(--cyan)) 1;
             border-radius: 0;
-            padding: 1.5rem;
+            padding: 1.2rem;
             text-align: left;
         }
 
         .vincore-box h2,
         .echo-box h2 {
-            font-size: 1.5rem;
-            margin-bottom: 0.3rem;
+            font-size: 1.3rem;
+            margin-bottom: 0.2rem;
         }
 
         .box-tagline {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             font-weight: 600;
             color: var(--cyan);
-            margin-bottom: 0.8rem;
+            margin-bottom: 0.5rem;
             letter-spacing: 0.03em;
         }
 
         .vincore-box p,
         .echo-box p {
-            font-size: 0.9rem;
-            line-height: 1.6;
+            font-size: 0.85rem;
+            line-height: 1.5;
             color: var(--text-secondary);
         }
 
         .vincore-echo-header {
             text-align: left;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
 
         .vincore-echo-header h2 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
+            font-size: 1.8rem;
+            margin-bottom: 0.4rem;
         }
 
         .vincore-echo-header p {
