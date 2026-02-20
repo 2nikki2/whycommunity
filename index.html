@@ -1192,14 +1192,6 @@
             line-height: 1.6;
         }
 
-        .metric-badges {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 0.5rem;
-            margin: 1rem 0 1.5rem;
-        }
-
         .metric-value {
             font-size: 1.4rem;
             color: var(--cyan);
@@ -1207,16 +1199,12 @@
             margin: 0.8rem 0;
         }
 
-        .metric-badge {
-            display: inline-block;
-            padding: 0.4rem 0.8rem;
-            background: rgba(88, 101, 242, 0.15);
-            border: 1px solid rgba(88, 101, 242, 0.3);
-            border-radius: 20px;
+        .metric-tags {
+            color: rgba(255, 255, 255, 0.45);
             font-size: 0.8rem;
             font-weight: 500;
-            color: var(--cyan);
-            white-space: nowrap;
+            margin: 0.3rem 0 1rem;
+            letter-spacing: 0.02em;
         }
 
         .industry-badge {
@@ -1862,13 +1850,8 @@
                         <span class="industry-badge">Web3</span>
                         <h3>OpenSea</h3>
                         <div class="metric-value">4x Growth</div>
-                        <div class="metric-badges">
-                            <span class="metric-badge">Growth</span>
-                            <span class="metric-badge">Engagement</span>
-                            <span class="metric-badge">Trust & Safety</span>
-                        </div>
-                        <p><strong>Challenge:</strong> Massive message volume, high-trust operations needed.</p>
-                        <p style="margin-top: 0.5rem;"><strong>Solution:</strong> Full server rebuild, 24/7 operational coverage with sub-5-minute response times.</p>
+                        <p class="metric-tags">Growth · Engagement · Trust & Safety</p>
+                        <p><strong>Challenge:</strong> Massive message volume, high-trust operations needed. <strong>Solution:</strong> Full server rebuild, 24/7 operational coverage with sub-5-minute response times.</p>
                     </div>
 
                     <!-- Gemini Case Study -->
@@ -1876,13 +1859,8 @@
                         <span class="industry-badge">AI</span>
                         <h3>Gemini</h3>
                         <div class="metric-value">3.5x Growth</div>
-                        <div class="metric-badges">
-                            <span class="metric-badge">Growth</span>
-                            <span class="metric-badge">Engagement</span>
-                            <span class="metric-badge">Trust & Safety</span>
-                        </div>
-                        <p><strong>Challenge:</strong> Required compliant, inclusive and secure operations with rapid user growth.</p>
-                        <p style="margin-top: 0.5rem;"><strong>Solution:</strong> 24/7 operational coverage with full trust & safety workflows, automated anti-abuse tooling, 0 escalated safety incidents.</p>
+                        <p class="metric-tags">Growth · Engagement · Trust & Safety</p>
+                        <p><strong>Challenge:</strong> Required compliant, inclusive and secure operations with rapid user growth. <strong>Solution:</strong> 24/7 operational coverage with full trust & safety workflows, automated anti-abuse tooling, 0 escalated safety incidents.</p>
                     </div>
 
                     <!-- Underdog Case Study -->
@@ -1890,12 +1868,8 @@
                         <span class="industry-badge">Sports</span>
                         <h3>Underdog</h3>
                         <div class="metric-value">75% Retention</div>
-                        <div class="metric-badges">
-                            <span class="metric-badge">Retention</span>
-                            <span class="metric-badge">Engagement</span>
-                        </div>
-                        <p><strong>Challenge:</strong> Needed better engagement and verification of active users.</p>
-                        <p style="margin-top: 0.5rem;"><strong>Solution:</strong> Bespoke OAuth web app with automatic role assignment for gated content access.</p>
+                        <p class="metric-tags">Retention · Engagement</p>
+                        <p><strong>Challenge:</strong> Needed better engagement and verification of active users. <strong>Solution:</strong> Bespoke OAuth web app with automatic role assignment for gated content access.</p>
                     </div>
                 </div>
             </div>
