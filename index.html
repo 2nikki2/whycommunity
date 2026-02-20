@@ -1265,16 +1265,16 @@
             grid-template-columns: 1fr 1fr;
             gap: 0;
             width: 100%;
-            flex: 1;
-            max-height: 65%;
-            align-items: stretch;
+            height: 320px;
+            margin-top: 1rem;
         }
 
         .vincore-echo-text {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            gap: 1rem;
+            justify-content: stretch;
+            gap: 0;
+            height: 100%;
         }
 
         .vincore-box,
@@ -1284,53 +1284,42 @@
             border-left: 3px solid;
             border-image: linear-gradient(to bottom, var(--purple), var(--cyan)) 1;
             border-radius: 0;
-            padding: 1.2rem;
+            padding: 1rem 1.2rem;
             text-align: left;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .vincore-box h2,
         .echo-box h2 {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             margin-bottom: 0.2rem;
         }
 
         .box-tagline {
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             font-weight: 600;
             color: var(--cyan);
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
             letter-spacing: 0.03em;
         }
 
         .vincore-box p,
         .echo-box p {
-            font-size: 0.85rem;
-            line-height: 1.5;
+            font-size: 0.8rem;
+            line-height: 1.4;
             color: var(--text-secondary);
-        }
-
-        .vincore-echo-header {
-            text-align: left;
-            margin-bottom: 1rem;
-        }
-
-        .vincore-echo-header h2 {
-            font-size: 1.8rem;
-            margin-bottom: 0.4rem;
-        }
-
-        .vincore-echo-header p {
-            font-size: 0.95rem;
-            color: var(--text-secondary);
-            line-height: 1.6;
         }
 
         .vincore-echo-image {
             display: flex;
             align-items: stretch;
-            justify-content: center;
-            height: 100%;
+            justify-content: stretch;
+            height: 320px;
             padding: 0;
+            overflow: hidden;
         }
 
         .vincore-echo-image img {
