@@ -1152,6 +1152,87 @@
                 height: 100px;
             }
         }
+
+        /* ═══════════════════════════════════════════════════════════════
+           CASE STUDY CARDS
+           ═══════════════════════════════════════════════════════════════ */
+
+        .case-study-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .case-study-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(88, 101, 242, 0.2);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .case-study-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .case-study-card .metric {
+            font-size: 1.5rem;
+            color: var(--cyan);
+            font-weight: 600;
+            margin: 1rem 0;
+        }
+
+        .case-study-card p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           50/50 SPLIT LAYOUT
+           ═══════════════════════════════════════════════════════════════ */
+
+        .split-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+        }
+
+        .split-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .split-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .split-section p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 768px) {
+            .split-layout {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .case-study-container {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1167,7 +1248,7 @@
 
     <!-- Slide counter -->
     <div class="slide-counter">
-        <span class="current" id="currentSlide">01</span> / <span id="totalSlides">11</span>
+        <span class="current" id="currentSlide">01</span> / <span id="totalSlides">14</span>
                 </div>
 
     <!-- Main deck -->
@@ -1637,8 +1718,66 @@
                 </div>
             </section>
 
-        <!-- SLIDE 11: LOGO GRID -->
+        <!-- SLIDE 11: VINCORE VS VINCORE ECHO -->
         <section class="slide" data-slide="11">
+            <div class="slide-content">
+                <div class="split-layout reveal">
+                    <div class="split-section">
+                        <h2>Vincore</h2>
+                        <p style="margin-top: 1rem;">
+                            We specialize in building, scaling, and managing high-performing Discord communities from the ground up. Our expertise spans server architecture, moderation strategy, bot development, and retention systems that keep communities thriving.
+                        </p>
+                    </div>
+                    <div class="split-section">
+                        <h2><span class="gradient-text">Vincore Echo</span></h2>
+                        <p style="margin-top: 1rem;">
+                            A comprehensive analytics platform designed to give server owners complete visibility into their Discord communities. Monitor engagement, track growth, identify trends, and make data-driven decisions to optimize your server's health and performance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 12: CASE STUDIES -->
+        <section class="slide" data-slide="12">
+            <div class="slide-content">
+                <p class="label reveal">Proven Results</p>
+                <h2 class="headline-lg reveal">
+                    Case Studies That<br><span class="gradient-text">Speak for Themselves</span>
+                </h2>
+                <div class="case-study-container reveal" style="margin-top: 2rem;">
+                    <!-- OpenSea Case Study -->
+                    <div class="case-study-card">
+                        <h3>OpenSea</h3>
+                        <div class="metric">100K → 400K+</div>
+                        <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem;">Users Scaled</p>
+                        <p><strong>Challenge:</strong> Massive message volume, high-trust operations needed.</p>
+                        <p style="margin-top: 0.5rem;"><strong>Solution:</strong> Full server rebuild, 24/7 operational coverage with sub-5-minute response times.</p>
+                    </div>
+
+                    <!-- Gemini Case Study -->
+                    <div class="case-study-card">
+                        <h3>Gemini</h3>
+                        <div class="metric">24/7</div>
+                        <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem;">SLA Coverage</p>
+                        <p><strong>Challenge:</strong> Required compliant, secure operations with rapid user growth.</p>
+                        <p style="margin-top: 0.5rem;"><strong>Solution:</strong> Full trust & safety workflows, automated anti-abuse tooling, zero escalated safety incidents.</p>
+                    </div>
+
+                    <!-- Underdog Case Study -->
+                    <div class="case-study-card">
+                        <h3>Underdog</h3>
+                        <div class="metric">75%+</div>
+                        <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem;">Community Confirmation Rate</p>
+                        <p><strong>Challenge:</strong> Needed better engagement and verification of active users.</p>
+                        <p style="margin-top: 0.5rem;"><strong>Solution:</strong> Bespoke Discord DAuth web app with automatic role assignment for gated content access.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 13: LOGO GRID -->
+        <section class="slide" data-slide="13">
             <div class="slide-content">
                 <h2 class="headline-lg reveal">
                     Communities We've<br><span class="gradient-text">Supported</span>
@@ -1712,8 +1851,8 @@
             </div>
         </section>
 
-        <!-- CTA SLIDE (Slide 12) -->
-        <section class="slide" data-slide="12">
+        <!-- CTA SLIDE (Slide 14) -->
+        <section class="slide" data-slide="14">
             <div class="slide-content">
                 <p class="label reveal">Get Started</p>
                 <h2 class="headline-lg reveal">
