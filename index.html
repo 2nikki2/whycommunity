@@ -1280,7 +1280,9 @@
         .echo-box {
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(88, 101, 242, 0.2);
-            border-radius: 12px;
+            border-left: 3px solid;
+            border-image: linear-gradient(to bottom, var(--purple), var(--cyan)) 1;
+            border-radius: 0;
             padding: 1.5rem;
             text-align: left;
         }
@@ -1288,7 +1290,15 @@
         .vincore-box h2,
         .echo-box h2 {
             font-size: 1.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .box-tagline {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--cyan);
+            margin-bottom: 0.8rem;
+            letter-spacing: 0.03em;
         }
 
         .vincore-box p,
@@ -1296,6 +1306,22 @@
             font-size: 0.9rem;
             line-height: 1.6;
             color: var(--text-secondary);
+        }
+
+        .vincore-echo-header {
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+
+        .vincore-echo-header h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .vincore-echo-header p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
         }
 
         .vincore-echo-image {
@@ -1812,19 +1838,25 @@
         <!-- SLIDE 11: VINCORE VS VINCORE ECHO -->
         <section class="slide" data-slide="11">
             <div class="slide-content">
+                <div class="vincore-echo-header reveal">
+                    <h2 class="headline-lg">Two Solutions, <span class="gradient-text">One Mission</span></h2>
+                    <p>Hands-on community operations paired with real-time analytics — a full-stack approach to Discord, built for brands that take community seriously.</p>
+                </div>
                 <div class="vincore-echo-layout reveal">
                     <!-- Left side: Text boxes -->
                     <div class="vincore-echo-text">
                         <div class="vincore-box">
                             <h2>Vincore</h2>
+                            <p class="box-tagline">Strategy. Build. Scale. Manage.</p>
                             <p>
                                 We specialize in building, scaling, and managing high-performing Discord communities from the ground up. Our expertise spans server architecture, moderation strategy, bot development, and retention systems that keep communities thriving.
                             </p>
                         </div>
                         <div class="echo-box">
                             <h2><span class="gradient-text">Vincore Echo</span></h2>
+                            <p class="box-tagline">Real-time insights, zero guesswork</p>
                             <p>
-                                A comprehensive analytics platform designed to give server owners complete visibility into their Discord communities. Monitor engagement, track growth, identify trends, and make data-driven decisions to optimize your server's health and performance.
+                                A community intelligence platform designed to give server owners complete visibility into their Discord communities. Monitor engagement, track growth, identify trends, and make data-driven decisions to optimize your server's health and performance.
                             </p>
                         </div>
                     </div>
